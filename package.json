@@ -1,5 +1,6 @@
 {
-  "name": "time-line2",
+  "homepage": "https://bkjang.github.io/time-line",
+  "name": "time-line",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch src/styles/scss:src/styles/css"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
