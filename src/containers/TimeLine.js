@@ -11,10 +11,10 @@ function TimeLine() {
       <h1>Events</h1>
       <section>
         <h2>2 December</h2>
-        <div class="grid-wrapper">
+        <div className="grid-wrapper">
           {ARTICLE_LIST_LEFT?.map(item => {
             return (
-              <Fragment key={item.title}
+              <Fragment key={`${item.title}-left`}
               >
                 <Article
                   title={item.title}
@@ -30,10 +30,10 @@ function TimeLine() {
       </section>
       <section>
         <h2>3 Jan</h2>
-        <div class="grid-wrapper">
+        <div className="grid-wrapper">
           {ARTICLE_LIST_RIGHT?.map(item => {
             return (
-              <Fragment key={item.title}
+              <Fragment key={`${item.title}-right`}
               >
                 <Article
                   title={item.title}

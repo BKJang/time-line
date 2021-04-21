@@ -12,8 +12,8 @@ function Article({ title, description, imgLink, video }) {
           width="100%"
           height="250"
           src={video}
-          frameborder="0"
-          allowfullscreen="allowfullscreen"
+          frameBorder="0"
+          allowFullScreen="allowfullscreen"
         >
         </iframe>
       )}

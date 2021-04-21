@@ -21,11 +21,11 @@ export const ARTICLE_LIST_LEFT = [
     description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
   },
   {
-    title: '14:30 AM',
+    title: '14:31 AM',
     description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
   },
   {
-    title: '14:30 AM',
+    title: '14:32 AM',
     description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
   },
   {
@@ -58,11 +58,11 @@ export const ARTICLE_LIST_RIGHT = [
     description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
   },
   {
-    title: '14:30 AM',
+    title: '14:31 AM',
     description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
   },
   {
-    title: '14:30 AM',
+    title: '14:32 AM',
     description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
   },
   {
