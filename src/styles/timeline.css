@@ -12,28 +12,32 @@ img {
  }
 }
 body {
-  background: #2b2a2b;
+  background: #eaebe5;
   color: white;
   margin: 0;
   padding: 0;
 }
 main {
-  padding: 2rem;
-  max-width: 1400px;
+  padding: 1rem;
+  max-width: 600px;
   margin: auto;
 }
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: cursive;
+  color: black;
+  margin-bottom: 0px;
 }
 h2 {
-  color: #ed666f;
-  font-family: 'Poppins', sans-serif;
+  color: #36ad36;
+  font-family: cursive;
   font-weight: 500;
+  margin-top: 0px;
 }
 h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: cursive;
   font-weight: 500;
   margin: 0.5rem 0;
+  color: #424242;
 }
 @media screen and (min-width: 600px) {
   .grid-wrapper {
@@ -44,23 +48,25 @@ h3 {
 }
 @media screen and (min-width: 1025px) {
   .grid-wrapper {
-    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-columns:  2fr;
  }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .grid-wrapper {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
  }
 }
 article {
   padding-bottom: 1rem;
-  border-bottom: 1px solid #4d4d4d;
 }
 article p {
-  font-family: 'Karla', sans-serif;
+  font-family: cursive;
   font-size: 0.95rem;
-  color: #c8c8c8;
+  color: #626262;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #4d4d4d;
 }
+
 article:nth-child(4) {
   grid-area: 1/2/4/3;
 }
@@ -94,7 +100,7 @@ article:nth-child(4) {
 }
 .footer-note {
   text-align: center;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Karla', cursive;
   font-size: 0.9rem;
   background: white;
   padding: 1rem;
@@ -104,4 +110,23 @@ article:nth-child(4) {
 .footer-note a {
   color: inherit;
   font-weight: 600;
+}
+
+.carousel .control-dots .dot {
+  background: #36ad36 !important;
+}
+
+.carousel.carousel-slider .control-arrow {
+  color: #36ad36 !important;
+  height: 250px !important;
+  background: transparent !important;
+  
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid black !important;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid black !important;
 }

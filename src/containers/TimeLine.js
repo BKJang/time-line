@@ -3,50 +3,30 @@ import React, { Fragment } from 'react';
 
 import Article from '../components/Article';
 
-import { ARTICLE_LIST_LEFT, ARTICLE_LIST_RIGHT } from './constants';
+import { ARTICLE_LIST } from './constants';
 
 function TimeLine() {
   return (
     <main>
-      <h1>Events</h1>
-      <section>
-        <h2>2 December</h2>
-        <div className="grid-wrapper">
-          {ARTICLE_LIST_LEFT?.map(item => {
-            return (
-              <Fragment key={`${item.title}-left`}
-              >
+      <h1>대제목(Main Title)</h1>
+      {ARTICLE_LIST?.map(item => {
+        return (
+          <Fragment key={`${item.mainTitle}`}
+          >
+            <section>
+              <h2>{item.mainTitle}</h2>
+              <div className="grid-wrapper">
                 <Article
-                  title={item.title}
+                  date={item.dateStr}
                   description={item.description}
                   imgLink={item.imgLink}
-                  video={item.video}
+                  videos={item.videos}
                 />
-              </Fragment>
-            )
-          })}
-
-        </div>
-      </section>
-      <section>
-        <h2>3 Jan</h2>
-        <div className="grid-wrapper">
-          {ARTICLE_LIST_RIGHT?.map(item => {
-            return (
-              <Fragment key={`${item.title}-right`}
-              >
-                <Article
-                  title={item.title}
-                  description={item.description}
-                  imgLink={item.imgLink}
-                  video={item.video}
-                />
-              </Fragment>
-            )
-          })}
-        </div>
-      </section>
-      {/* <p class="footer-note">Design by <a href="https://dribbble.com/shots/8576480-Book-Festival-Responsive-Website">tubik</a></p> */}
+              </div>
+            </section>
+          </Fragment>
+        )
+      })}
     </main>
   );
 }

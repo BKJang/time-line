@@ -1,73 +1,40 @@
-export const ARTICLE_LIST_LEFT = [
+export const ARTICLE_LIST = [
   {
-    title: '9:00 AM',
-    description: 'Life finds a way. You know what? It is beets.',
+    mainTitle: 'SubTitle',
+    dateStr: '2021.04.19',
+    description: `해당 날짜의 영상들에 대한 설명`,
+    videos: [
+      `https://www.youtube.com/embed/luPj1uU3CWw`,
+      `https://www.youtube.com/embed/9wTpF-cLjm8`,
+      `https://www.youtube.com/embed/lERa_3TznAw`,
+      `https://www.youtube.com/embed/Q61Zvk8OyU8`,
+      `https://www.youtube.com/embed/VEtA-UEm-rU`,
+      `https://www.youtube.com/embed/PbXwnGbDrx0`,
+      `https://www.youtube.com/embed/cig842ZL_0Y`,
+      `https://www.youtube.com/embed/JwW1pMRlvI8`,
+      `https://www.youtube.com/embed/h_OwoNEP3WQ`,
+      `https://www.youtube.com/embed/ICoT8LS0jTo`,
+      `https://www.youtube.com/embed/T4OOdafezvc`,
+      `https://www.youtube.com/embed/DEyL-g5nt60`,
+    ],
   },
   {
-    title: '10:00 AM',
-    description: `I've crashed into a beet truck`,
+    mainTitle: '샘플이 더 필요해~',
+    dateStr: '2021.04.20',
+    description: `다른 날짜 찍은 것도 유튜브로 올려줘!`,
+    videos: [
+      `https://www.youtube.com/embed/luPj1uU3CWw`,
+      `https://www.youtube.com/embed/9wTpF-cLjm8`,
+      `https://www.youtube.com/embed/lERa_3TznAw`,
+      `https://www.youtube.com/embed/Q61Zvk8OyU8`,
+      `https://www.youtube.com/embed/VEtA-UEm-rU`,
+      `https://www.youtube.com/embed/PbXwnGbDrx0`,
+      `https://www.youtube.com/embed/cig842ZL_0Y`,
+      `https://www.youtube.com/embed/JwW1pMRlvI8`,
+      `https://www.youtube.com/embed/h_OwoNEP3WQ`,
+      `https://www.youtube.com/embed/ICoT8LS0jTo`,
+      `https://www.youtube.com/embed/T4OOdafezvc`,
+      `https://www.youtube.com/embed/DEyL-g5nt60`,
+    ],
   },
-  {
-    title: '12:30 AM',
-    description: 'I was part of something special.',
-  },
-  {
-    title: '13:30 AM',
-    description: `아이유 - 내손을 잡아`,
-    video: `https://www.youtube.com/embed/3iM_06QeZi8`,
-  },
-  {
-    title: '14:30 AM',
-    description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
-  },
-  {
-    title: '14:31 AM',
-    description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
-  },
-  {
-    title: '14:32 AM',
-    description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
-  },
-  {
-    title: '17:30 AM',
-    description: `태연 - I`,
-    video: `https://www.youtube.com/embed/4OrCA1OInoo`
-  }
-]
-
-export const ARTICLE_LIST_RIGHT = [
-  {
-    title: '9:00 AM',
-    description: 'Life finds a way. You know what? It is beets.',
-  },
-  {
-    title: '10:00 AM',
-    description: `I've crashed into a beet truck`,
-  },
-  {
-    title: '12:30 AM',
-    description: 'I was part of something special.',
-  },
-  {
-    title: '13:30 AM',
-    description: `Brave Girls - 롤린`,
-    video: `https://www.youtube.com/embed/teVGtThOj88`,
-  },
-  {
-    title: '14:30 AM',
-    description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
-  },
-  {
-    title: '14:31 AM',
-    description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
-  },
-  {
-    title: '14:32 AM',
-    description: `Just my luck, no ice. God help us, we're in the hands of engineers.`,
-  },
-  {
-    title: '17:30 AM',
-    description: `라붐 - 상상더하기`,
-    video: `https://www.youtube.com/embed/m0o7fbNKhpM`
-  }
 ]

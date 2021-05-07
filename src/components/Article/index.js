@@ -1,24 +1,16 @@
 import React from 'react';
 
-function Article({ title, description, imgLink, video }) {
+import Flicking from '../Flicking';
+
+function Article({ date, description, imgLink, videos }) {
+  console.log('afadf', videos)
   return (
     <article>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      {imgLink && <img src={imgLink} alt={`${title}-img`} />}
-      {video && (
-        <iframe
-          title={`${title}-video`}
-          width="100%"
-          height="250"
-          src={video}
-          frameBorder="0"
-          allowFullScreen="allowfullscreen"
-        >
-        </iframe>
+      {videos && (
+        <Flicking videos={videos} />
       )}
-
-
+      <h3>{date}</h3>
+      <p>{description}</p>
     </article >
   );
 }
