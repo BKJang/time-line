@@ -2,7 +2,8 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-function Flicking({ videos, images }) {
+function Flicking({ videos, images, path, imageType }) {
+  console.log(new Array(images).fill(undefined).map((val,idx) => idx))
   return (
     <>
       {videos && (
@@ -26,11 +27,12 @@ function Flicking({ videos, images }) {
         </div>
       )}
       {images &&
-        images.map((image, index) => {
+        new Array(images).fill(undefined).map((val,idx) => idx).map((image, index) => {
+          console.log('aa', image, index)
           return (
             <div key={`${image}-${index}`}>
               <div>
-                <img src={image} alt={`${image}-${index}`} />
+                <img src={`images/${path}/${image + 1}.${imageType}`} alt={`${image}-${index}`} />
               </div>
             </div>
           );
