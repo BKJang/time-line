@@ -25,19 +25,16 @@ function Flicking({ videos, images }) {
           </Carousel>
         </div>
       )}
-      {images && (
-        <div style={{ height: "300px", maxWidth: "580px" }}>
-          <Carousel showStatus={false}>
-            {images.map((image, index) => {
-              return (
-                <div key={`${image}-${index}`}>
-                  <img src={image} alt={`${image}-${index}`} />
-                </div>
-              );
-            })}
-          </Carousel>
-        </div>
-      )}
+      {images &&
+        images.map((image, index) => {
+          return (
+            <div key={`${image}-${index}`}>
+              <div>
+                <img src={image} alt={`${image}-${index}`} />
+              </div>
+            </div>
+          );
+        })}
     </>
   );
 }
